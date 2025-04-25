@@ -41,7 +41,7 @@ This repository contains a Jupyter Notebook that:
 
 ## Installation
 
-Install the exact package versions used in this notebook:
+Installation of packages is done in the first code cell. There also the correct versions are defined. 
 
 > **Tip:** Consider creating a dedicated virtual environment:
 > ```bash
@@ -63,7 +63,7 @@ Install the exact package versions used in this notebook:
        password="Arschbacke11!"
    )
    ```
-   For security, replace hard-coded credentials with environment variables or a secure secrets store:
+   For security, you replace hard-coded credentials with environment variables or a secure secrets store:
    ```python
    import os
    client = RestClient(
@@ -85,7 +85,7 @@ Install the exact package versions used in this notebook:
    jupyter notebook
    ```
 2. Open `Lego.ipynb`.  
-3. Execute cells in order.
+3. Execute the cells in order.
 
 ---
 
@@ -162,11 +162,10 @@ with open("rf_price_predictor.pkl","rb") as f:
 
 - If you encounter any new categorical levels in production data, they’ll map to −1 (the “unknown” bucket). Consider swapping to `OneHotEncoder` or `TargetEncoder` if better performance is needed.  
 - To tune hyperparameters, look into `GridSearchCV` or `RandomizedSearchCV` around the `Pipeline`.  
-- For larger datasets, you may want to replace `pandas` in-memory tables with out‐of‐core tools (e.g., Dask).
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.  
+This project is licensed under the GPL-3.0 License as seen in the LICENSE file in this repository.  
 Feel free to adapt and extend!
